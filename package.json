@@ -1,0 +1,32 @@
+{
+    "name": "grapesjs-robodog",
+    "version": "1.0.0",
+    "description": "Grapesjs Robodog",
+    "main": "dist/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Ju99ernaut/grapesjs-robodog.git"
+    },
+    "scripts": {
+        "start": "grapesjs-cli serve",
+        "build": "grapesjs-cli build",
+        "build:css": "sass src/styles.scss dist/grapesjs-robodog.min.css --style compressed",
+        "watch:scss": "sass --watch src/styles.scss dist/grapesjs-robodog.min.css --style compressed",
+        "bump": "npm version patch -m 'Bump v%s'"
+    },
+    "keywords": [
+        "grapesjs",
+        "plugin"
+    ],
+    "devDependencies": {
+        "grapesjs-cli": "^3.0.0",
+        "sass": "^1.50.0"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@uppy/robodog": "^2.5.3"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
